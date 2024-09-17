@@ -1,0 +1,134 @@
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows:0.3fr 0.7fr 3fr 0.8fr ;
+    grid-template-areas:
+    'navbar navbar navbar'
+    'header header header'
+    'sidebar box banner1'
+    'sidebar box banner2'
+    'footer footer footer' ;  
+    background-color: #e56b6f;
+    color: white;
+    text-align: center;
+    height: 80vh;
+    /* gap: 20px; */
+}
+.navbar{
+    grid-area: navbar;
+    background: #eaac88;
+    padding: 10px;
+}
+.header{
+    grid-area:header ;
+    padding: 20px;
+    background: #e56b6f;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar{
+    grid-area:sidebar ;
+    background: #955361;
+    margin-right: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    padding: 20px;
+    grid-area: box;
+    grid-column: 2fr 2fr 2fr;
+    background-color: #6d597a;
+    display: grid;   
+    gap: 20px ;
+    grid-template-areas:
+    'box1 box2 box3'
+    'box4 box5 box6' ;
+
+}
+.box1{
+    grid-area: box1;
+    background: #4a3c53;
+}
+.box2{
+    grid-area: box2;
+    background: #4a3c53;
+}
+.box3{
+    grid-area: box3;
+    background: #4a3c53;
+}
+.box4{
+    grid-area: box4;
+    background: #4a3c53;
+}
+.box5{
+    grid-area: box5;
+    background: #4a3c53;
+}
+.box6{
+    grid-area: box6;
+    background: #4a3c53;
+}
+.banner1{
+    grid-area: banner1 ;
+    background: #b56576;
+    margin-left: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 28vh;
+}
+.banner2{
+    grid-area: banner2;
+    background: #794d56;
+    margin-left: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 28vh;
+}
+.footer{
+    grid-area: footer;
+    grid-template-areas: 
+    'left center right';
+    display: grid;
+}
+.left{
+    height: 10vh;
+    grid-area: left;
+    background: #355070;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.center{
+    grid-area: center;
+    background:#293e58 ;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    grid-area: right;
+    background: #1b293b;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background: black;
+    color: white;
+    border: none;
+    border-top-left-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    margin-top: 108.5px;
+    margin-left: 88px;
+}
+
+
